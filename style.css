@@ -1,0 +1,159 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Basic SetUp */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #1E1E1E;
+    background-color: #F3F1FF;
+}
+
+main {
+    padding: 0 20rem;
+}
+
+
+/* Component */
+
+.container {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 5px;
+}
+
+.section-title {
+    color: #562EFF;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-2-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Header */
+
+.header {
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 20rem;
+    margin-bottom: 3.6rem;
+}
+
+.header .logo-box {
+    width: 4rem;
+}
+
+.header .logo-box img {
+    width: 100%;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+}
+
+.header nav ul li {
+    list-style: none;
+}
+
+.header nav ul li a {
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Top Players Section */
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.player img {
+    height: 6rem;
+    width: 6rem;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+}
+
+/* Responsive */
+
+/* Large Device */
+
+@media screen and (max-width: 991px) {
+    main {
+        padding: 0 4rem;
+    }
+    .container {
+        padding: 2rem;
+    }
+    .header {
+        padding: 1.5rem 4rem;
+    }
+}
+
+/* Medium Device */
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 1.5rem;
+    }
+    .container {
+        padding: 1.5rem;
+    }
+    .grid-3-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header {
+        padding: 1.5rem;
+    }
+}
+
+/* Smaller Device */
+@media screen and (max-width: 576px) {
+    main {
+        padding: 0 2rem;
+    }
+    .container {
+        padding: 2rem;
+    }
+    .grid-3-col {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .header {
+        padding: 1rem 2rem;
+    }
+    .player {
+        flex-direction: column;
+    }
+}
