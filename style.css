@@ -64,6 +64,14 @@ main {
     column-gap: 5rem;
 }
 
+.gap-20 {
+    column-gap: 2rem;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
 /* Header */
 
 .header {
@@ -137,6 +145,48 @@ article {
 
 .author a {
     text-decoration: none;
+}
+
+/* Courses Section */
+
+.course {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.5);
+}
+
+.course .img-box {
+    width: 100%;
+}
+
+.course-author {
+    color: #ED6B4F;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star {
+    font-size: 1.4rem;
+    color: #FFC014;
+}
+
+.rating {
+    color: #A2A2A2;
+}
+
+.time {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    gap: 6px;
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    border-radius: 10rem;
 }
 
 /* Responsive */
